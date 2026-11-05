@@ -26,7 +26,6 @@ C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\rjsmrazo
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\jsmodules\jsmodules.build.manifest.json
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\scopedcss\scopedcss.cache
-C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\scopedcss\bundle\WebSallesMvc.styles.css
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\scopedcss\projectbundle\WebSallesMvc.bundle.scp.css
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\compressed\binmf1l6u7-{0}-s9y91u5nkn-s9y91u5nkn.gz
@@ -95,8 +94,6 @@ C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\compress
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\compressed\o6dqifkv7i-{0}-mlv21k5csn-mlv21k5csn.gz
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\compressed\spfk7y07t4-{0}-lvkpp2i49p-lvkpp2i49p.gz
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\compressed\2av7d10pqh-{0}-scyj3pnqhf-scyj3pnqhf.gz
-C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\compressed\vtsfadet5v-{0}-exh8gv585c-exh8gv585c.gz
-C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\compressed\bn4x05bhat-{0}-exh8gv585c-exh8gv585c.gz
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\staticwebassets.development.json
@@ -199,3 +196,7 @@ C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\bin\Debug\net10.0\zh-Hans\
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\WebSallesMvc.csproj.AssemblyReference.cache
 C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\WebSallesMvc.sourcelink.json
+C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\compressed\vtsfadet5v-{0}-40xidkdu8n-40xidkdu8n.gz
+C:\Users\hanrr\source\repos\WebSallesMvc\WebSallesMvc\obj\Debug\net10.0\compressed\bn4x05bhat-{0}-40xidkdu8n-40xidkdu8n.gz
