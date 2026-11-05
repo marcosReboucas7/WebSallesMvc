@@ -1,8 +1,14 @@
 using Microsoft.EntityFrameworkCore;
+using WebSallesMvc.Data;
+
+
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("WebSallesMvcContext") ?? throw new InvalidOperationException("Connection string 'WebSallesMvcContext' not found.");
 
-builder.Services.AddDbContext<WebSallesMvcContext>(options => options.UseNpgsql(connectionString));
+builder.Services.AddDbContext<WebSallesMvcContext>(
+    options => options.UseNpgsql(connectionString));
+
+builder.Services.AddScoped<SeedingService>();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
@@ -11,10 +17,19 @@ builder.Services.AddControllersWithViews();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseDeveloperExceptionPage();
+
+    using (var scope = app.Services.CreateScope())
+    {
+        var seedingService = scope.ServiceProvider.GetRequiredService<SeedingService>();
+        seedingService.Seed();
+    }
+}
+else
+{
+    app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
 
