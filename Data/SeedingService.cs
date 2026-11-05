@@ -1,4 +1,5 @@
-﻿using WebSallesMvc.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using WebSallesMvc.Models;
 using WebSallesMvc.Models.Enums;
 
 namespace WebSallesMvc.Data
@@ -77,6 +78,19 @@ namespace WebSallesMvc.Data
             );
 
             _context.SaveChanges();
+
+            _context.Database.ExecuteSqlRaw("""
+                SELECT setval(pg_get_serial_sequence('"Department"', 'Id'), COALESCE(MAX("Id"), 1), MAX("Id") IS NOT NULL)
+                FROM "Department";
+                """);
+            _context.Database.ExecuteSqlRaw("""
+                SELECT setval(pg_get_serial_sequence('"Seller"', 'Id'), COALESCE(MAX("Id"), 1), MAX("Id") IS NOT NULL)
+                FROM "Seller";
+                """);
+            _context.Database.ExecuteSqlRaw("""
+                SELECT setval(pg_get_serial_sequence('"SalesRecord"', 'Id'), COALESCE(MAX("Id"), 1), MAX("Id") IS NOT NULL)
+                FROM "SalesRecord";
+                """);
         }
     }
 }

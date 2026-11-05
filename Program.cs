@@ -3,6 +3,9 @@ using WebSallesMvc.Data;
 using WebSallesMvc.Services;
 
 
+// Permite gravar DateTime com Kind=Unspecified/Local em colunas "timestamp without time zone".
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("WebSallesMvcContext") ?? throw new InvalidOperationException("Connection string 'WebSallesMvcContext' not found.");
 
@@ -11,6 +14,7 @@ builder.Services.AddDbContext<WebSallesMvcContext>(
 
 builder.Services.AddScoped<SeedingService>();
 builder.Services.AddScoped<SellerService>();
+builder.Services.AddScoped<DepartmentService>();
 
 // Add services to the container.
 builder.Services.AddRazorPages();

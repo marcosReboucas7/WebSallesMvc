@@ -15,5 +15,11 @@ namespace WebSallesMvc.Services
         {
             return _context.Seller.ToList();
         }
+
+        public void Intert(Seller obj)
+        {
+            _context.Add(obj);
+            _context.SaveChanges();
+        }
     }
 }

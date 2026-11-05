@@ -35,7 +35,7 @@ namespace WebSallesMvc.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Department");
+                    b.ToTable("Department", (string)null);
                 });
 
             modelBuilder.Entity("WebSallesMvc.Models.SalesRecord", b =>
@@ -50,7 +50,7 @@ namespace WebSallesMvc.Migrations
                         .HasColumnType("double precision");
 
                     b.Property<DateTime>("Date")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<int>("SellerId")
                         .HasColumnType("integer");
@@ -62,7 +62,7 @@ namespace WebSallesMvc.Migrations
 
                     b.HasIndex("SellerId");
 
-                    b.ToTable("SalesRecord");
+                    b.ToTable("SalesRecord", (string)null);
                 });
 
             modelBuilder.Entity("WebSallesMvc.Models.Seller", b =>
@@ -77,7 +77,7 @@ namespace WebSallesMvc.Migrations
                         .HasColumnType("double precision");
 
                     b.Property<DateTime>("BirthDate")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<int>("DepartmentId")
                         .HasColumnType("integer");
@@ -94,7 +94,7 @@ namespace WebSallesMvc.Migrations
 
                     b.HasIndex("DepartmentId");
 
-                    b.ToTable("Seller");
+                    b.ToTable("Seller", (string)null);
                 });
 
             modelBuilder.Entity("WebSallesMvc.Models.SalesRecord", b =>
