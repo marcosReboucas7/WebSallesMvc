@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WebSallesMvc.Data;
+using WebSallesMvc.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,7 @@ builder.Services.AddDbContext<WebSallesMvcContext>(
     options => options.UseNpgsql(connectionString));
 
 builder.Services.AddScoped<SeedingService>();
+builder.Services.AddScoped<SellerService>();
 
 // Add services to the container.
 builder.Services.AddRazorPages();

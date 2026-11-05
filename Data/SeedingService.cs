@@ -5,7 +5,7 @@ namespace WebSallesMvc.Data
 {
     public class SeedingService
     {
-        private WebSallesMvcContext _context;
+        private readonly WebSallesMvcContext _context;
 
         public SeedingService(WebSallesMvcContext context)
         {

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebSallesMvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+171867c92c00a84ecfb1be28fcb8e91afeeb5fb7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d6b783be6435cdb35e17b3fc3926ac10c7ae39f")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebSallesMvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebSallesMvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
